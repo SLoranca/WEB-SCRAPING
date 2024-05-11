@@ -1,0 +1,113 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    background: url("../assets/media/patterns/pattern-1.jpg");
+    background-size: cover;
+}
+
+.left {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.left h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.left p {
+    color: white;
+    font-size: 20px;
+}
+
+@media(max-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 100vh;
+    }
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff7a;
+    z-index: 1100;
+    width: 100vw;
+    height: 100vh;
+    /*opacity: 0.5;*/
+}
+
+#loader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+}
+
+#loaderText {
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    margin: -50px 0 0 -50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.text-title {
+    background-color: #7239EA;
+    padding: 10px;
+    font-size: 15px;
+    color: ghostwhite;
+}
+
+.bg-app:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card .panel-scraping {
+    background: black;
+    color: white;
+}

@@ -1,0 +1,17 @@
+﻿@{
+	ViewData["Title"] = "HISTORIAL SCRAPING";
+}
+
+<h1>HISTORIAL SCRAPING</h1>
+
+@section Scripts {
+	<script type="text/javascript">
+		document.onreadystatechange = function () {
+			if (document.readyState == "complete") {
+				console.log("history");
+				document.getElementById("lblTitleHeader").innerText = "Historial";
+				document.getElementById("lblTitleSubHeader").innerText = "Historial de Scraping";
+			}
+		}
+	</script>
+}
